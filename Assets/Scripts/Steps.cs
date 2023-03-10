@@ -17,14 +17,14 @@ public class Steps : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        instructions[0] = "take 200 Microliters of blood form the buffer ";
+        instructions[0] = "take 200 Microliters of blood form the buffer";
         instructions[1] = "take 20 Microliters of k.protein from the buffer";
         instructions[2] = "take 400 Microliters from Lysis Solution buffer";
         instructions[3] = "put the sample in the Votrex for 1m";
         instructions[4] = "place the sample in the thermomixer for 10m";
         instructions[5] = "take 200 Microliters of Ithanol 96-100 from the buffer";
-        instructions[6] = "place the sample in the centerifuge and set it to 6000 cycles per minute for 1m ";
-        instructions[7] = "take 500 Microliters from Wash buffer1 ";
+        instructions[6] = "place the sample in the centerifuge and set it to 6000 cycles per minute for 1m";
+        instructions[7] = "take 500 Microliters from Wash buffer1";
         instructions[8] = "place the sample in the centerifuge and set it to 14000 cycles per minute for 3m";
         instructions[9] = "take 200 Microliters from Elution buffer";
         instructions[10] = "place the sample in the centerifuge and set it to 8000 cycles per minute for 3m";

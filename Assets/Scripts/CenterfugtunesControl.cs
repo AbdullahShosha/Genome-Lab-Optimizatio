@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CenterfugtunesControl : MonoBehaviour
+public class CenterfugtunesControl : Interactable
 {
     public IDictionary<string, int> Inside = new Dictionary<string, int>();
     public int NumberOfElements = 0;

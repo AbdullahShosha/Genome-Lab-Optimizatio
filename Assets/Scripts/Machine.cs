@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Machine : MonoBehaviour
+public class Machine : Interactable
 {
     public Sprite NextStepHelper, WrongStephelper;
     public Image helper;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Votrex : MonoBehaviour
+public class Votrex : Interactable
 {
     public static bool Vortexon = false;
 

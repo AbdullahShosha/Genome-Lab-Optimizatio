@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class bufferControl : MonoBehaviour
+public class bufferControl : Interactable
 {
-   
-    public string Name ;
     public bool IsOpen = false;
     public GameObject Cap;
     public Text bufName;

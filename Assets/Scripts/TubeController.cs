@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class TubeController : MonoBehaviour
+public class TubeController : Interactable
 {
     public IDictionary<string, int> Inside = new Dictionary<string, int>();
     public int NumberOfElements = 0;

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class PipepitteController : MonoBehaviour
+public class PipepitteController : Interactable
 {
     public int Size = 0 ;
     public string InsidePip;
