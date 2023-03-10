@@ -291,7 +291,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   step:
-  - {fileID: 11400000, guid: 5f1ea0afda9824b40b00403ba6deb9c9, type: 2}
+  - {fileID: 11400000, guid: 606dc3613c8f99743a53f6034cd92feb, type: 2}
+  - {fileID: 11400000, guid: 62b54b2f7686f6a479fa6db6401f73e7, type: 2}
+  - {fileID: 11400000, guid: ef3e4b63c15dd7844b5574582a6d90df, type: 2}
+  - {fileID: 11400000, guid: af2daf7e9f8b25c42a710b7b55830381, type: 2}
+  - {fileID: 11400000, guid: 6e0c6d14ab6d9cb41bb6ed92e1bc7cfe, type: 2}
+  - {fileID: 11400000, guid: d973cb1cbb824444a9274b3cbb3c7e83, type: 2}
+  - {fileID: 11400000, guid: 0e1db2fc4ad1f1c4ca3e32117e66e3b2, type: 2}
+  - {fileID: 11400000, guid: b16417e6d182d674faf880357ce52357, type: 2}
+  - {fileID: 11400000, guid: 4cebbfa7580981849b4029ab137d3cf1, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
+  - {fileID: 11400000, guid: 39888dd99c0edf04bbfd422cc608832c, type: 2}
   InstructionTextUI: {fileID: 0}
   stepTextUI: {fileID: 0}
 --- !u!4 &266704288
