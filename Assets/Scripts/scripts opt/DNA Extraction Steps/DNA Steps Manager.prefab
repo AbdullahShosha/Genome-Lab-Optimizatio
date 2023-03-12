@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1875869520071540232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1875869520071540238}
+  - component: {fileID: 1875869520071540233}
+  m_Layer: 0
+  m_Name: DNA Steps Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1875869520071540238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875869520071540232}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1627069, y: 3.9852917, z: 13.101547}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1875869520071540233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875869520071540232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e210325c2f0f164faf15afd890fc05b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  step:
+  - {fileID: 11400000, guid: 606dc3613c8f99743a53f6034cd92feb, type: 2}
+  - {fileID: 11400000, guid: 62b54b2f7686f6a479fa6db6401f73e7, type: 2}
+  - {fileID: 11400000, guid: ef3e4b63c15dd7844b5574582a6d90df, type: 2}
+  - {fileID: 11400000, guid: af2daf7e9f8b25c42a710b7b55830381, type: 2}
+  - {fileID: 11400000, guid: 6e0c6d14ab6d9cb41bb6ed92e1bc7cfe, type: 2}
+  - {fileID: 11400000, guid: d973cb1cbb824444a9274b3cbb3c7e83, type: 2}
+  - {fileID: 11400000, guid: 0e1db2fc4ad1f1c4ca3e32117e66e3b2, type: 2}
+  - {fileID: 11400000, guid: b16417e6d182d674faf880357ce52357, type: 2}
+  - {fileID: 11400000, guid: 4cebbfa7580981849b4029ab137d3cf1, type: 2}
+  - {fileID: 11400000, guid: 70661b1f2f9684440aad3b56fe5ebc45, type: 2}
+  - {fileID: 11400000, guid: 4533a64286de5ec459c052f90ce0f3eb, type: 2}
+  - {fileID: 11400000, guid: 817849625bcfc71428cc90604fbdbf73, type: 2}
+  - {fileID: 11400000, guid: ab283bb3a228b774e879a3bd1400ae17, type: 2}
+  - {fileID: 11400000, guid: 761c2504244e0a644b8e9c30926ccf03, type: 2}
+  - {fileID: 11400000, guid: 82e338adbbb12564f9d1e73b09da96f4, type: 2}
+  - {fileID: 11400000, guid: 2426c72972469f5429d4a762bafab422, type: 2}
+  - {fileID: 11400000, guid: de7aad61ffdcc324baa6078d4d433496, type: 2}
+  - {fileID: 11400000, guid: 01dc768d8123a9f4da78b640d824d311, type: 2}
+  - {fileID: 11400000, guid: aa9b285f4ae180b42a6277634f4b8dff, type: 2}
+  - {fileID: 11400000, guid: 80fd1a05df9b44d4499b21a1e1c0c7e5, type: 2}
+  - {fileID: 11400000, guid: c4a7e4b9c625b2542acf7a70c7cde295, type: 2}
+  - {fileID: 11400000, guid: 0aec7a59fc15437428b361cd8266ce9b, type: 2}
+  - {fileID: 11400000, guid: 8c7736b2bc33cc041b722ecdbd834e0d, type: 2}
+  - {fileID: 11400000, guid: 8047f634fd8135d408522e665518b4ff, type: 2}
+  - {fileID: 11400000, guid: 21dadf17353c02141a8699322257a8fa, type: 2}
+  - {fileID: 11400000, guid: 2a39c980156fa9a479c7a71b5fa66339, type: 2}
+  - {fileID: 11400000, guid: 40b9544cdefd62a4db8e61f7a2aaf3cf, type: 2}
+  - {fileID: 11400000, guid: 5bdca28f1c2931e4091d98e859d67879, type: 2}
+  - {fileID: 11400000, guid: 6cf7e634e8fa85040a28271f40579070, type: 2}
+  - {fileID: 11400000, guid: 64b32a3189a3ef549987698c2df322c2, type: 2}
+  - {fileID: 11400000, guid: d708431e616348149a86a3e65348c61c, type: 2}
+  - {fileID: 11400000, guid: cdba58231b96d3f49ac38af022ec88f2, type: 2}
+  - {fileID: 11400000, guid: dfecf09253953cd4685a7b6473e56bc3, type: 2}
+  - {fileID: 11400000, guid: 7e5b1fa979e0c3d47b0caf04eae5f0ab, type: 2}
+  - {fileID: 11400000, guid: 0d875671227478c4ebead9adeae158f2, type: 2}
+  - {fileID: 11400000, guid: 56f618d47c565b142a0dfc8686b612ef, type: 2}
+  - {fileID: 11400000, guid: 453eb4d43f19efd419a6ce697b6463ac, type: 2}
+  - {fileID: 11400000, guid: 248ae83a8efa5c547aea2bdf7b5dc0e0, type: 2}
+  - {fileID: 11400000, guid: ba8e4a6709aecc243add55be4a045052, type: 2}
+  - {fileID: 11400000, guid: 535906c104e038245b47bd0bdfe9a098, type: 2}
+  InstructionTextUI: {fileID: 0}
+  stepTextUI: {fileID: 0}

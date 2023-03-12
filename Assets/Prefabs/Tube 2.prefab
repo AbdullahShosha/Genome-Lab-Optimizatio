@@ -538,6 +538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5fd8a85dfd4be64b83fe2cbe1368885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: Tube
+  ID: 11
   NumberOfElements: 0
   NextStepHelper: {fileID: 21300000, guid: 58fb2a1ead077c14e8e26f0da2b867c8, type: 3}
   WrongStephelper: {fileID: 21300000, guid: 86a15a17c3c2a3e41b7c4523f041b078, type: 3}

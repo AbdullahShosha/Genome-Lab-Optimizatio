@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "", menuName = "Steps/Machine Interaction Step")]
 public class MachineInteractionStep : InteractionStep
 {
-    public Machine machine;
+    
     // Start is called before the first frame update
     void Start()
     {

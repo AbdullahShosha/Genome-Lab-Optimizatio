@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "UI Interaction Step", menuName = "Steps/UI Interaction Step")]
 public class UiInteractionStep : InteractionStep
 {
-    public Canvas window;
+    
     // Start is called before the first frame update
     void Start()
     {

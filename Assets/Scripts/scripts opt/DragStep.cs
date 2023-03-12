@@ -5,8 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Drag Step", menuName = "Steps/Drag Step")]
 public class DragStep : ExperimentStep
 {
-    [SerializeField] private Interactable interactable1;
-    [SerializeField] private Interactable interactable2;
+    enum interactable { Pipepitte, BloodBuffer , kKroteinBuffer, LysisSolutionBuffer, IthanolBuffer, WashBuffer1, ElutionBuffer, WashBuffer2,
+                        Centerifuge, Thermomixer, Centerfugtunes, Tube, Freezer,Votrex }
+    [SerializeField] private interactable interactable1;
+    [SerializeField] private interactable interactable2;
+    public static bool[] Interactable_Status = { };
+
     // Start is called before the first frame update
     void Start()
     {

@@ -4,10 +4,12 @@ using System.Collections;
 
 public class ExperimentManager : MonoBehaviour
 {
-    public ExperimentStep[] step;
-    private int CurrentStep = 0;
     public Text InstructionTextUI;
     public Text stepTextUI;
+    public ExperimentStep[] step;
+    private int CurrentStep = 0;
+    public Canvas []UI_Panels;
+
 
     // Update is called once per frame
     void Update()
