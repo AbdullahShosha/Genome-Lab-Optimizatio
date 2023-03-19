@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   StepInstructions: use the pipepitte to take of k.protein from the Second buffer
+  IsDone: 0
   interactable1: 0
-  interactable2: 2
-  Name1: Pipepitte
-  name2: KProtein
+  interactable2: 1

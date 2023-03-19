@@ -10,7 +10,6 @@ public class TubeController : Interactable
     public Sprite NextStepHelper, WrongStephelper;
     public Image helper;
     public bool MachineDone;
-    public float time = 0;
     public Text Ttext;
     public Vector3 Readypos;
     PipepitteController Pipepitte;
@@ -21,6 +20,7 @@ public class TubeController : Interactable
     void Start()
     {
         Readypos = gameObject.transform.position;
+        Interaction_Time = 0;
     }
 
     // Update is called once per frame
@@ -34,6 +34,7 @@ public class TubeController : Interactable
     }
     private void OnTriggerEnter(Collider other)
     {
+        DragStep.Interactable_Status[ID] = true;
         if (other.CompareTag("pipepitte"))
         {
             Pipepitte = other.GetComponent<PipepitteController>();
@@ -44,8 +45,8 @@ public class TubeController : Interactable
     }
     private void OnTriggerStay(Collider other)
     {
-        Ttext.text = ((int)time).ToString();
-        if (time >= 2.0f)
+        Ttext.text = ((int)Interaction_Time).ToString();
+        if (Interaction_Time >= 2.0f)
         {
             if (other.CompareTag("pipepitte") &&
                 Pipepitte.InsidePip != "empty")
@@ -131,12 +132,16 @@ public class TubeController : Interactable
         {
             if (other.CompareTag("pipepitte"))
                 PipepitteAnimator.SetBool("Soaking", true);
-            time += Time.deltaTime;
+            Interaction_Time += Time.deltaTime;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        time = 0;
-        
+        DragStep.Interactable_Status[ID] = false;
+        Interaction_Time = 0;
+    }
+    public override void Interact()
+    {
+        Debug.Log(Name);
     }
 }

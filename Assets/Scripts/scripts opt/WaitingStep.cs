@@ -16,4 +16,8 @@ public class WaitingStep : ExperimentStep
     {
         
     }
+    override public void CheckStepCompletion()
+    {
+
+    }
 }

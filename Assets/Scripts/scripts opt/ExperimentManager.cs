@@ -10,20 +10,20 @@ public class ExperimentManager : MonoBehaviour
     private int CurrentStep = 0;
     public Canvas []UI_Panels;
 
-
+    void Start()
+        {
+            // Initialize the experiment
+            CurrentStep = 0;
+            UpdateStepText();
+        }
     // Update is called once per frame
     void Update()
     {
-        
+        if(step[CurrentStep].IsDone)
+        {
+            NextStep();
+        }
     }
-
-    void Start()
-    {
-        // Initialize the experiment
-        CurrentStep = 0;
-        UpdateStepText();
-    }
-
     public void NextStep()
     {
         CurrentStep++;
@@ -38,6 +38,7 @@ public class ExperimentManager : MonoBehaviour
 
     private void UpdateStepText()
     {
-        stepTextUI.text = step[CurrentStep].StepInstructions;
+        stepTextUI.text = CurrentStep.ToString();
+        InstructionTextUI.text = step[CurrentStep].StepInstructions;
     }
 }

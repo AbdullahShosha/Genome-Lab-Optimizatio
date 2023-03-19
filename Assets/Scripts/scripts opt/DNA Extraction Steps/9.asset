@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: 9
   m_EditorClassIdentifier: 
   StepInstructions: put the sample in the Votrex
-  interactable1: 3
-  interactable2: 13
-  Name1: Centerfugtunes
-  name2: Votrex
+  IsDone: 0
+  interactable1: 4
+  interactable2: 7

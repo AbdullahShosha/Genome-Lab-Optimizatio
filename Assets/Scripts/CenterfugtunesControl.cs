@@ -11,7 +11,6 @@ public class CenterfugtunesControl : Interactable
     public Sprite NextStepHelper, WrongStephelper;
     public Image helper;
     public bool MachineDone;
-    public float time = 0;
     public Text Ttext;
     public Vector3 Readypos;
     PipepitteController Pipepitte;
@@ -22,6 +21,7 @@ public class CenterfugtunesControl : Interactable
     private void Start()
     {
         Readypos = transform.position;
+        Interaction_Time = 0;
     }
 
     /*private void Update()
@@ -47,10 +47,10 @@ public class CenterfugtunesControl : Interactable
     }
     private void OnTriggerStay(Collider other)
     {
-        Ttext.text = ((int)time).ToString();
-        if (time >= 2.0f)
+        Ttext.text = ((int)Interaction_Time).ToString();
+        if (Interaction_Time >= 2.0f)
         {
-
+            DragStep.Interactable_Status[ID] = true;
             if (other.CompareTag("pipepitte"))
                 
             {
@@ -170,11 +170,16 @@ public class CenterfugtunesControl : Interactable
         {
             if(other.CompareTag("pipepitte"))
                 PipepitteAnimator.SetBool("Soaking", true);
-            time += Time.deltaTime;
+            Interaction_Time += Time.deltaTime;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        time = 0;
+        DragStep.Interactable_Status[ID] = true;
+        Interaction_Time = 0;
+    }
+    public override void Interact()
+    {
+        Debug.Log(Name);
     }
 }

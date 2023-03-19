@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: 5
   m_EditorClassIdentifier: 
   StepInstructions: Add the k.protein to the Sample
+  IsDone: 0
   interactable1: 0
-  interactable2: 10
-  Name1: Pipepitte
-  name2: Centerfugtunes
+  interactable2: 4

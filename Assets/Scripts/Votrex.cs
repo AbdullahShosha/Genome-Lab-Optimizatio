@@ -6,6 +6,11 @@ public class Votrex : Interactable
 {
     public static bool Vortexon = false;
 
+
+    private void Start()
+    {
+        
+    }
     public void TurnOnAndOff()
     {
         Vortexon = !Vortexon;
@@ -16,4 +21,16 @@ public class Votrex : Interactable
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        
+    }
+    public override void Interact()
+    {
+        Debug.Log("Buffer");
+    }
 }

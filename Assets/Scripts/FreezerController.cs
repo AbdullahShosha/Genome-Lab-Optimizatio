@@ -13,6 +13,10 @@ public class FreezerController : Interactable
     public Sprite Done,Wrong;
     public Image helper;
 
+    private void Start()
+    {
+        Interaction_Time = 0;
+    }
     public void Set()
     {
         Temp = int.Parse(Field.text);
@@ -44,5 +48,22 @@ public class FreezerController : Interactable
             Steps.WrongStepPanel.SetActive(true); 
         }
 
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        DragStep.Interactable_Status[ID] = true;
+    }
+    private void OnTriggerStay(Collider other)
+    {
+
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        DragStep.Interactable_Status[ID] = false;
+        Interaction_Time = 0;
+    }
+    public override void Interact()
+    {
+        Debug.Log(Name);
     }
 }

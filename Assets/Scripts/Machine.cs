@@ -20,10 +20,11 @@ public class Machine : Interactable
     private void Start()
     {
         CameraAnimator = GameObject.Find("mainCamera").GetComponent<Animator>();
-        
+        Interaction_Time = 0;
     }
     private void OnTriggerEnter(Collider other)
     {
+        DragStep.Interactable_Status[ID] = true;
         GoToCenter = true;
         if (other.GetComponent<CenterfugtunesControl>())
         {
@@ -97,5 +98,14 @@ public class Machine : Interactable
     public void TurnOn()
     {
         Work.SetBool("IsWorking", true);
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        DragStep.Interactable_Status[ID] = false;
+        Interaction_Time = 0;
+    }
+    public override void Interact()
+    {
+        Debug.Log(Name);
     }
 }

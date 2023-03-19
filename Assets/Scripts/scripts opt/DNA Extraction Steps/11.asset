@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: 11
   m_EditorClassIdentifier: 
   StepInstructions: place the sample in the thermomixer
-  interactable1: 3
-  interactable2: 9
-  Name1: Centerfugtunes
-  name2: Thermomixer
+  IsDone: 0
+  interactable1: 4
+  interactable2: 3

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: 6
   m_EditorClassIdentifier: 
   StepInstructions: use the pipepitte to take of Lysis Solution from the third buffer
+  IsDone: 0
   interactable1: 0
-  interactable2: 3
-  Name1: Pipepitte
-  name2: LysisSolution
+  interactable2: 1

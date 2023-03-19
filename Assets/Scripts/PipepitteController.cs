@@ -13,7 +13,6 @@ public class PipepitteController : Interactable
     public GameObject Panel;
     public InputField Field;
     public Text Ttext;
-    public float time = 0;
     public Vector3 Reset;
     private bufferControl Currentbuffer;
 
@@ -21,6 +20,7 @@ public class PipepitteController : Interactable
     {
         Reset = gameObject.transform.position;
         InsidePip  = "empty";
+        Interaction_Time = 0;
     }
 
     public void ONPanel()
@@ -40,76 +40,28 @@ public class PipepitteController : Interactable
         Steps.instructiontext.text = "add it to the sample";
         helper.sprite = putSample;
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        
+    }
     private void OnTriggerStay(Collider other)
     {
-
-        Ttext.text = ((int)time).ToString();
-        if (time >= 2.0f)
+        Ttext.text = ((int)Interaction_Time).ToString();
+        if (Interaction_Time >= 2.0f)
         {
-            if ( other.CompareTag("Buffer"))
-            {
-                Currentbuffer = other.gameObject.GetComponent<bufferControl>();
-                if (Currentbuffer.IsOpen)
-                {
-                    if (((((Steps.Step == 1) || (Steps.Step == 15)) && Currentbuffer.Name == "Blood") ||
-                        (Steps.Step == 2 && Currentbuffer.Name == "KProtein") ||
-                        ((Steps.Step == 3 || Steps.Step == 16 || Steps.Step == 20) && Currentbuffer.Name == "LysisSolution") ||
-                        ((Steps.Step == 6 || Steps.Step == 30) && Currentbuffer.Name == "Ithanol") ||
-                        (Steps.Step == 8 && Currentbuffer.Name == "WashBuffer1") ||
-                        ((Steps.Step == 10 || Steps.Step == 32) && Currentbuffer.Name == "ElutionBuffer") ||
-                        (Steps.Step == 12 && Currentbuffer.Name == "WashBuffer2")||
-                        (Steps.Step == 23 && Currentbuffer.Name == "Trizol") ||
-                        (Steps.Step == 24 && Currentbuffer.Name == "Chloroform") ||
-                        (Steps.Step == 28 && Currentbuffer.Name == "IsoPropanol")))
-                    {
-                        InsidePip = Currentbuffer.Name;
-
-                        if (Size == 0)
-                            ONPanel();
-                    }
-                    else
-                    {
-                        Steps.WrongStepPanel.SetActive(true);
-                        helper.sprite = WrongStephelper;
-                        transform.position = Reset;
-                    }
-                }
-                else
-                {
-                    Steps.WrongStepPanel.SetActive(true);
-                    helper.sprite = WrongStephelper;
-                    transform.position = Reset;
-                }
-            }
-            else if (other.CompareTag("Tube")  && ((Steps.Step == 15 && InsidePip == "Blood" && Size == 1) ||
-                    (Steps.Step == 16 && InsidePip == "LysisSolution" && Size == 12) || Steps.Step == 18))
-            {
-                gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("Soaking", true);
-                other.transform.GetChild(TubeController.indx).gameObject.SetActive(true);
-                if (TubeController.indx > 0)
-                    other.transform.GetChild(TubeController.indx - 1).gameObject.SetActive(false);
-                TubeController.indx++;
-                transform.position = Reset;
-                Steps.NextStep();
-                InsidePip = "empty";
-                Size = 0;
-            }
-            else if (other.CompareTag("Basin") && Steps.Step == 19)
-            {
-                gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("Soaking", true);
-                transform.position = Reset;
-                Steps.NextStep();
-            }
-
+            DragStep.Interactable_Status[ID] = true;
         }
         else
-            time += Time.deltaTime;
+            Interaction_Time += Time.deltaTime;
 
     }
     private void OnTriggerExit(Collider other)
     {
-        time = 0;
-        
+        DragStep.Interactable_Status[ID] = false;
+        Interaction_Time = 0;
+    }
+    public override void Interact()
+    {
+        Debug.Log(Name);
     }
 }

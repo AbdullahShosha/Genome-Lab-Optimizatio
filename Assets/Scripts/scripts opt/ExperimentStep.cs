@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExperimentStep : ScriptableObject
+public abstract class ExperimentStep : ScriptableObject
 {
     public string StepInstructions;
-    //public Machine
+    public bool IsDone = false;
+
+    public abstract void CheckStepCompletion();
     
 }
